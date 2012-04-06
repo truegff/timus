@@ -21,6 +21,7 @@ public class Main {
         }
 
         Seat head = new Seat(deputies[N - 1]);
+        head.root = true;
 
         for (int i = N - 2; i >= 0; i--) {
             head.insert(deputies[i]);
